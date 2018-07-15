@@ -35,7 +35,7 @@
         <h4 class="card-header">
           {{ product.name }}
           <span class="float-right badge badge-pill badge-secondary">
-            {{ product.price | number:'2.2-2' }} zł
+            {{ product.price | currency:'zł':'symbol':'2.2-2' }}
           </span>
         </h4>
 

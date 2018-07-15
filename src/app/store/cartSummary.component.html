@@ -3,7 +3,7 @@
     Koszyk:
     <span *ngIf="cart.itemCount > 0">
       {{ cart.itemCount }} produkt(ow)
-      {{ cart.cartPrice | number:'2.2-2' }} zł
+      {{ cart.cartPrice | currency:'zł':'symbol':'2.2-2' }}
     </span>
 
     <span *ngIf="cart.itemCount === 0">

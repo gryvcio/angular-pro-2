@@ -1,3 +1,7 @@
+/*
+Custom Directive to generate pagination
+*/
+
 import {
   Directive,
   ViewContainerRef,

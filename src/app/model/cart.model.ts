@@ -7,6 +7,7 @@ export class Cart {
   itemCount = 0;
   cartPrice = 0;
 
+  // Add product to Cart
   addLine(product: Product, quantity: number = 1) {
     const line = this.lines.find(oneLine => oneLine.product.id === product.id);
     if (line !== undefined) {

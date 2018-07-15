@@ -9,8 +9,11 @@ export class ProductRepository {
   private categories: string[] = [];
 
   constructor (private dataSource: StaticDataSource) {
+    // Get product from dataSource
     dataSource.getProduct().subscribe(data => {
+      // Get all products
       this.products = data;
+      // Get only kategories from dataSource
       this.categories = data.map(p => p.category)
       .filter((c, index, array) => array.indexOf(c) === index).sort();
     });

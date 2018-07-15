@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
+
 import { ProductRepository } from '../model/product.repository';
 import { Product } from '../model/product.model';
 import { Cart } from '../model/cart.model';
 
 @Component({
   selector: 'app-store',
-  // moduleId: module.id,
-  templateUrl: './store.component.html',
-  styleUrls: ['./store.component.css']
+  moduleId: module.id,
+  templateUrl: './store.component.html'
 })
 export class StoreComponent {
   public selectedCategory = null;
